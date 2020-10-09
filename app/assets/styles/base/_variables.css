@@ -1,15 +1,20 @@
 /**********************
         colors
 **********************/
-$documentBackground: #fff;
-$mainLightBlue: #B6B2ED;
-$mainBlue: #09053C;
-$mainDarkBlue: #03011C;
-$mainOrange: #F9930E;
+$lightColor: #fff;
+$darkColor: #111;
 
 
-/*
-$textColor: #FFCD8B;
-$bgColor: #B6B2ED;
-$accentLight: #8F89E1;
-*/
+$lightGray: #777;
+$gray: #555;
+$darkGray: #222;
+
+
+$blue: #222029;
+
+
+$lightGold: #deaa86;
+$gold: #ca8e33;
+$golder: #ae7621;
+
+

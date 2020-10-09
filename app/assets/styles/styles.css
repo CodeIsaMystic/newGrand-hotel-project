@@ -1,4 +1,30 @@
 @import 'normalize.css';
+
+/*  BASE  */
 @import 'base/_variables';
 @import 'base/_global';
 @import 'base/_mixins';
+
+/*  COMPONENTS  */
+@import 'components/_btn';
+@import 'components/_copyright';
+@import 'components/_flex-position';
+@import 'components/_generic-txt-content';
+@import 'components/_heading';
+@import 'components/_menu-icon';
+@import 'components/_page-section';
+@import 'components/_social-bar';
+@import 'components/_wrapper';
+
+/*  MODULES  */
+@import 'modules/_side-bar';
+@import 'modules/_navigation';
+@import 'modules/_large-hero';
+@import 'modules/_superpose-content';
+@import 'modules/_room-card';
+@import 'modules/_customers-card';
+
+/*   LAYOUT  */
+@import 'layout/_site-header';
+@import 'layout/_site-footer';
+

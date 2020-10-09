@@ -1,0 +1,70 @@
+.large-hero {
+  height: 35rem;
+  margin: auto;
+  text-align: center;
+  color: $lightColor;
+  
+  @mixin atSmall {
+    height: 45rem;
+  }
+  
+  @mixin atLarge {
+    height: 65rem;
+  }
+
+  &__title {
+    margin: 1.5rem auto;
+    font-size: 3.8rem;
+    font-weight: 400;
+    color: $lightColor;
+    animation: anim 2s;
+    
+    @mixin atXSmall {
+      font-size: 4.7rem;
+    }
+
+    @mixin atSmall {
+      font-size: 5.5rem;
+    }
+    
+    @mixin atMedium {
+      font-size: 7rem;
+    }
+  }
+
+  &__txt-content {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0rem;
+    margin-bottom: 1.7rem;
+    animation: anim 1.5s .5s backwards;
+    
+    @mixin atXSmall {
+      font-size: 2.4rem;
+    }
+    
+    @mixin atSmall {
+      font-size: 2.8rem;
+    }
+    
+    @mixin atMedium {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__btn {   
+
+    animation: anim 1s 1s backwards;
+  }
+
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

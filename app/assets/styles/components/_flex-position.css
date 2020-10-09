@@ -1,0 +1,85 @@
+.flexPosition {
+  display: flex;
+
+  &--flexD-col {
+    flex-direction: column;
+    align-items: center;
+
+    &--space-B {
+      justify-content: space-between;
+    }
+
+    &--space-E {
+      justify-content: space-evenly;
+    }
+
+    &--centered {
+      justify-content: center;
+    }
+  }
+
+  @mixin atLarge {
+    &--col-1 {
+      flex: 0 1 50%;
+    }
+
+    &--col-2 {
+      flex: 1 1;
+    }
+  }
+
+  &--flexWrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &--spaceE {
+    flex-direction: column;
+    align-items: center;
+
+    @mixin atXLarge {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &--flexD-row-onSmall {
+    flex-direction: column;
+    align-items: center;
+
+
+    @mixin atSmall {
+      flex-direction: row;
+      align-items: center;
+
+      &--spaceB {
+        justify-content: space-between;
+      }
+    }
+
+    &--switch {
+      order: 1;
+
+      @mixin atSmall {
+        order: 0;
+      }
+    }
+  }
+
+  &--flexD-row-onLarge {
+    flex-direction: column;
+
+    @mixin atLarge {
+      flex-direction: row;
+    }
+
+    &--switch {
+      order: 1;
+
+      @mixin atLarge {
+        order: 0;
+      }
+    }
+  }
+
+}

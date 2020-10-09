@@ -1,0 +1,86 @@
+.customers-card {
+  background-color: $lightColor;
+  color: $darkGray;
+  display: flex;
+  width: 20rem;
+  text-align: center;
+
+  @mixin atXSmall {
+    width: 30rem;
+  }
+
+  @mixin atSmall {
+    width: 55rem;
+    text-align: left;
+  }
+
+  @mixin atMedium {
+    width: 60rem;
+  }
+
+  &:first-child {
+    margin-bottom: 3rem;
+
+    @mixin atXLarge {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__content {
+    margin: auto 0;
+
+    &__img {
+      width: 20rem;
+      margin: 0;
+
+      @mixin atXSmall {
+        width: 30rem;
+      }
+
+      @mixin atSmall {
+        width: 20rem;
+        margin-left: -1.3rem;
+      }
+    }
+  }
+
+  &__description {
+    padding: 0 .7rem;
+
+    @mixin atSmall {
+      padding: 0 2rem;
+    }
+
+    &__full-name {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: .7rem;
+      margin-bottom: 0;
+
+      @mixin atSmall {
+        font-size: 2rem;
+      }
+    }
+
+    &__p1 {
+      font-size: 1rem;
+      font-style: italic;
+      color: $golder;
+
+      @mixin atSmall {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__p2 {
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 500;
+
+      @mixin atSmall {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

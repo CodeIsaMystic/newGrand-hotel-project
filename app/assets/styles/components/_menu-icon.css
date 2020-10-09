@@ -1,0 +1,41 @@
+/*   Burger button   */
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+
+  &__line {
+    height: .2rem;
+    width: 2.5rem;
+    background-color: $darkGray;
+    margin-bottom: .6rem;
+
+    &--small {
+      width: 1.8rem;
+      transition: all .4s;
+    }
+  }
+
+  &:hover .menu-icon__line {
+    width: 2.5rem;
+  }
+}
+
+
+/*   Burger Button animation   */
+.checkbox:checked~.side-bar__nav {
+  left: 6rem;
+}
+
+.checkbox:checked~.side-bar__fixed .menu-icon__line--1 {
+  transform: rotate(-405deg) translate(-5px, 6px);
+  width: 2.5rem;
+}
+
+.checkbox:checked~.side-bar__fixed .menu-icon__line--3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+  width: 2.5rem;
+}
+
+.checkbox:checked~.side-bar__fixed .menu-icon__line--2 {
+  opacity: 0;
+}

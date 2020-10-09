@@ -1,0 +1,38 @@
+.side-bar {
+
+  /*  Side-bar Fixed   */
+  &__fixed {
+    width: 6rem;
+    height: 100%;
+    background-color: $lightColor;
+    position: fixed;
+    z-index: 10;
+    
+  }
+
+
+  /*   Side-bar Nav   */
+  &__nav {
+    position: fixed;
+    width: 25rem;
+    left: -19rem;
+    height: 100%;
+    z-index: 9;
+    padding-top: 2rem;
+
+    @mixin atXSmall {
+      width: 36rem;
+      left: -30rem;
+    }
+
+    
+    @mixin atSmall {
+      width: 40rem;
+      left: -34rem;
+      padding-top: 1rem;
+    }
+
+  }
+
+}
+

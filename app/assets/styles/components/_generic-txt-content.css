@@ -1,0 +1,29 @@
+.generic-txt-content {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+  text-align: center;
+  
+  @mixin atXSmall {
+    font-size: 1.6rem;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--full-width {
+    max-width: 95%;
+    margin: 2.5rem auto 2.5rem auto;
+    
+    @mixin atXSmall {
+      margin: 3.5rem auto 4rem auto;
+    }
+    
+    @mixin atLarge {
+      max-width: 85%;
+      margin: 5rem auto 8rem auto;
+    }
+    
+  }
+}

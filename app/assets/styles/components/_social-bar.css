@@ -1,0 +1,23 @@
+.social-bar {
+  list-style: none;
+  padding: 0;
+  height: 25rem;
+
+  &__items {
+    font-size: 2rem;
+    color: $lightGray;
+    transition: color .3s;
+
+    &:hover {
+      color: $lightGold;
+    }
+
+    i {
+      transition: all .8s;
+    }
+
+    i:hover {
+      transform: scale(1.3);
+    }
+  }
+}

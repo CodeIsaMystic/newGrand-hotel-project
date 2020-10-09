@@ -1,0 +1,33 @@
+.copyright {
+  font-size: 1rem;
+  
+  @mixin atSmall {
+    font-size: 1.2rem;
+  }
+
+  &--year {
+    color: $darkGray;
+  }
+
+  &--nav-txt {
+    color: $lightColor;
+    padding-bottom: 2rem;
+
+    @mixin atSmall {
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  &--footer-txt {
+    color: $gray;
+
+      &__icon {
+        color: tomato;
+      }
+
+      &__span {
+        color: $golder;
+      }
+  }
+}

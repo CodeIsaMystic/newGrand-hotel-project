@@ -1,0 +1,21 @@
+.page-section {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+  
+  @mixin atLarge {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  &--light {
+    background-color: $lightColor;
+  }
+
+  &--gradient {
+    background: linear-gradient(to bottom, rgba(222, 170, 134, .05), rgba(222, 170, 134, .15));
+  }
+  &--blue {
+    background-color: $blue;
+    color: $lightColor;
+  }
+}

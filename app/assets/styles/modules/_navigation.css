@@ -1,0 +1,138 @@
+.navigation {
+
+  background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)), url(assets/img/nav-bg.jpeg) center no-repeat;
+  background-size: cover;
+  transition: left .8s cubic-bezier(1, 0, 0, 1);
+
+  /*   search button   */
+  &__search-btn {
+    position: relative;
+
+    &>input {
+      width: 20rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: rgba(0, 0, 0, .3);
+      font-family: 'Josefin Sans', sans-serif;
+      color: $lightGold;
+      letter-spacing: .1rem;
+      outline: none;
+      border: .1rem solid $gray;
+      border-radius: 10rem;
+      transition: background-color .3s;
+
+      @mixin atXSmall {
+        width: 25rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+      }
+      
+      @mixin atSmall {
+        width: 30rem;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+      }
+
+      &:focus {
+        background-color: rgba(0, 0, 0, .1);
+      }
+    }
+
+    & button {
+      background-color: transparent;
+      color: $lightGold;
+      position: absolute;
+      font-size: 1.1rem;
+      top: 0.5rem;
+      right: 1rem;
+
+      @mixin atXSmall {
+        font-size: 1.4rem;
+        top: 0.8rem;
+      }
+
+      @mixin atSmall {
+        font-size: 1.7rem;
+        top: 1rem;
+      }
+    }
+  }
+
+  /*   navigation list   */
+  &__list {
+    list-style: none;
+    padding: 0;
+    height: 28rem;
+
+    &__item {
+      position: relative;
+
+      /*   links styling  */
+      .link-menu {
+        color: $lightColor;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color .5s;
+
+        @mixin atXSmall {
+          font-size: 1.4rem;
+        }
+        
+        @mixin atSmall {
+          font-size: 1.6rem;
+        }
+
+        &::before {
+          content: "";
+          width: 0rem;
+          height: 0.1rem;
+          background-color: $lightGold;
+          position: absolute;
+          top: 0.6rem;
+          left: -3rem;
+          transition: width .5s cubic-bezier(1, 0, 0, 1);
+
+
+          @mixin atXSmall {
+            top: .8rem;
+            left: -4rem;
+          }
+        }
+
+        &::after {
+          content: "";
+          width: 0rem;
+          height: 0.1rem;
+          background-color: $lightGold;
+          position: absolute;
+          top: 0.6rem;
+          right: -3rem;
+          transition: width .5s cubic-bezier(1, 0, 0, 1);
+          
+          @mixin atXSmall {
+            top: .8rem;
+            right: -4rem;
+          }
+
+        }
+
+        &:hover {
+          color: $lightGold;
+
+          &::before,
+          &::after {
+            width: 2rem;
+            
+            @mixin atXSmall {
+              width: 3rem;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
