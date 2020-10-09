@@ -15,6 +15,10 @@
   "keywords": [],
   "author": "JoWd",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeIsaMystic/newGrand-hotel-project/issues"
+  },
+  "homepage": "https://github.com/CodeIsaMystic/newGrand-hotel-project#readme",
   "dependencies": {
     "lazysizes": "^5.2.0",
     "lodash": "^4.17.15",
